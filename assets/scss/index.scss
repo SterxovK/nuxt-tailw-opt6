@@ -1,0 +1,46 @@
+$font-weight: (
+    weight-medium: 400,
+    weight-fat: 700,
+);
+
+$primary-color: #fff;
+$header-gradient: linear-gradient(0.25turn, #000000, #1C2734);
+$btn-color: #0584FE;
+
+$header-height: 60px;
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: map-get($font-weight, weight-medium);
+    box-sizing: border-box;
+    background-color: $primary-color;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+button {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: map-get($font-weight, weight-medium);
+}
+
+header {
+    height: $header-height;
+    background-image: $header-gradient;
+    color: $primary-color;
+}
+
+.btn-color{
+    background-color: $btn-color
+}
+
+h1 {
+    font-size: 41px;
+    font-weight: map-get($font-weight, weight-fat);
+    line-height: 49.2px;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: map-get($font-weight, weight-fat);
+    line-height: 40.8px;
+}
